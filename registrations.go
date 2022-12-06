@@ -10,7 +10,7 @@ import (
 
 func registerUser(username string, password string) (string, error) {
 
-	db, err := sql.Open("mysql", "sample_db_user:Mrzero=12@tcp(127.0.0.1:3306)/sample_db")
+	db, err := sql.Open("mysql", "root:Mrzero=12@tcp(127.0.0.1:3306)/sample_db")
 
 	if err != nil {
 

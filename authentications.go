@@ -18,7 +18,7 @@ import (
 
 func generateToken(username string, password string) (map[string]interface{}, error) {
 
-	db, err := sql.Open("mysql", "sample_db_user:EXAMPLE_PASSWORD@tcp(127.0.0.1:3306)/sample_db")
+	db, err := sql.Open("mysql", "root:Mrzero=12@tcp(127.0.0.1:3306)/sample_db")
 
 	if err != nil {
 
@@ -123,7 +123,7 @@ func generateToken(username string, password string) (map[string]interface{}, er
 
 func validateToken(authToken string) (map[string]interface{}, error) {
 
-	db, err := sql.Open("mysql", "sample_db_user:EXAMPLE_PASSWORD@tcp(127.0.0.1:3306)/sample_db")
+	db, err := sql.Open("mysql", "root:Mrzero=12@tcp(127.0.0.1:3306)/sample_db")
 
 	if err != nil {
 
